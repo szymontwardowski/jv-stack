@@ -45,6 +45,7 @@ public class MateStack<T> {
         if (top == null) {
             throw new EmptyStackException();
         }
+
         T value = top.getValue();
         top = top.getNext();
         size--;
